@@ -33,6 +33,8 @@ class HomePage extends Component {
         //large
         img.push({
           src:url,
+          width:Math.floor((Math.random() * 10) + 1),
+          height:Math.floor((Math.random() * 10) + 1),
         });
       });
       this.setState({imageList:img});

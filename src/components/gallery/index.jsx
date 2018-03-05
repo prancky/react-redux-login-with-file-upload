@@ -68,8 +68,7 @@ class galleryPage extends Component {
     render() {
         return (
           <div>
-            <h2>heeee</h2>
-            <div>
+            <div style={{marginTop:'10px'}}>
               <FileUploadProgress key='ex1' url={FILE_UPLOAD_URL}
                 onLoad={ (e, request) => {this.imageUpload(request);}}
                 onError={ (e, request) => {console.log('error', e, request);}}
