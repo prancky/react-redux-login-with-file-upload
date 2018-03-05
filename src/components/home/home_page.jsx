@@ -19,8 +19,8 @@ class HomePage extends Component {
       browserHistory.push('/');
     }
     var data = {
-      inspectionId:'5a8f145aa6579f3f280d147f',
-      activityId:'58ff0e4590954af75de13ef6'
+      inspectionId:'5a8f1455a6579f3f280d13f6',
+      activityId:'58ff0e7090954af75de13f2f'
     }
     this.props.getUploadedImageList(data);
   }
@@ -33,13 +33,11 @@ class HomePage extends Component {
         //large
         img.push({
           src:url,
-          width: 4,
-          height: 3
         });
       });
       this.setState({imageList:img});
     }
-  } 
+  }
     render() {
         return (
           <div>

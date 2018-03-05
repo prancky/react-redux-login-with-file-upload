@@ -21,7 +21,9 @@ class HomePage extends Component {
         <Navbar fixedTop inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#brand">RYDE</a>
+              <LinkContainer to="/home">
+                <a>RYDE</a>
+              </LinkContainer>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>

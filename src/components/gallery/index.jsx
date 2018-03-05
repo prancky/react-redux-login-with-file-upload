@@ -11,7 +11,7 @@ class galleryPage extends Component {
     super(props);
     this.state = {
       upload:true,
-      tokenId:localStorage.getItem('token'), 
+      tokenId:localStorage.getItem('token'),
     };
   }
 
@@ -21,8 +21,8 @@ class galleryPage extends Component {
       browserHistory.push('/');
     }
     var data = {
-      inspectionId:'5a8f145aa6579f3f280d147f',
-      activityId:'58ff0e4590954af75de13ef6'
+      inspectionId:'5a8f1455a6579f3f280d13f6',
+      activityId:'58ff0e7090954af75de13f2f'
     }
     this.props.getUploadedImageList(data);
   }
@@ -31,8 +31,8 @@ class galleryPage extends Component {
     if (nextProps.uploadState) {
       if (!this.state.upload) {
         var data = {
-          inspectionId:'5a8f145aa6579f3f280d147f',
-          activityId:'58ff0e4590954af75de13ef6'
+          inspectionId:'5a8f1455a6579f3f280d13f6',
+          activityId:'58ff0e7090954af75de13f2f'
         }
         this.props.getUploadedImageList(data);
         this.setState({upload:true});
@@ -54,8 +54,8 @@ class galleryPage extends Component {
         "EMPLOYEE_ID": '58f8a88a33a5b79d1b19edf7'
       }
       var commentOBJ = {
-        inspectionId: '5a8f145aa6579f3f280d147f',
-        activityId: '58ff0e4590954af75de13ef6',
+        inspectionId: '5a8f1455a6579f3f280d13f6',
+        activityId: '58ff0e7090954af75de13f2f',
         token:localStorage.getItem('token'),
         data: comment
       }

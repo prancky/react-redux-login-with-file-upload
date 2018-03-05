@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import LoginForm from '../../components/login/login_form';
+import LoginForm from '../../components/login/login_form'; 
 
 class Login extends Component {
 
@@ -11,27 +11,7 @@ class Login extends Component {
     };
   }
 
-  componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener("resize", this.updateWindowDimensions);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateWindowDimensions);
-  }
-
-  updateWindowDimensions() {
-    //this.setState({ width: window.innerWidth, height: window.innerHeight });
-  }
-
-
-
   render() {
-    let coverImage = {
-      height: this.state.height + "px",
-      width: this.state.width + "px",
-      backgroundImage: `url(https://rydecars.com/static/media/login-bg.d20f0e58.jpg)`
-    };
     return (
       <div  className="wrapper">
         <LoginForm />

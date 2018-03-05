@@ -8,7 +8,7 @@ class Home extends Component {
       return (
         <div>
           <NavigationPage />
-          <div>
+          <div style={{marginTop:'50px'}}>
             <HomePage />
           </div>
         </div>
